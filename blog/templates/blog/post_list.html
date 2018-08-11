@@ -1,19 +1,25 @@
+{% load static %}
 <!DOCTYPE HTML>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"
-    </head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Didact+Gothic" rel="stylesheet">
     <body>
         <div class='jumbotron' align="center">
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
         {% for post in posts %}
-            <div align="center" style="margin:30px;background-color:#D9DAFD">
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaksbr }}</p>
-                <p style="color:grey; font-size:10px;">published: {{ post.published_date }}</p>
-            </div>
+          <div class="post_st" align="center">
+
+             <h1 class="post_title"><a href="">{{ post.title }}</a></h1>
+             <p>{{ post.text|linebreaksbr }}</p>
+             <div class="date">
+                 <p>Published: {{ post.published_date }}</p>
+             </div>
+         </div>
         {% endfor %}
       </body>
 </html>

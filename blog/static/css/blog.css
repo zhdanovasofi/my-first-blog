@@ -1,0 +1,19 @@
+p{
+  margin: 30px;
+  padding: 15px;
+  font-family: 'Didact Gothic', sans-serif;
+}
+h1{
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+}
+.post_title{
+  padding-top: 20px;
+}
+#date{
+  color:grey;
+  font-size:10px;
+}
+.post_st{
+  background-color: #D9DAFD;
+}
