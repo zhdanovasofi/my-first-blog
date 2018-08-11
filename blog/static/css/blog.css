@@ -10,10 +10,13 @@ h1{
 .post_title{
   padding-top: 20px;
 }
-#date{
+
+.date{
   color:grey;
   font-size:10px;
 }
 .post_st{
   background-color: #D9DAFD;
+  padding-left: 15px;
+  padding-top: 10px;
 }
