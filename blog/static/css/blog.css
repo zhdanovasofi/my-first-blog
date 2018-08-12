@@ -8,19 +8,23 @@ h1,h2{
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
 }
+
 h1{
   font-size: 100px;
-  padding-top: 20px;
-  background: url('static/images/back.jpg');
-}
-
+  padding-top: 20px; }
 
 .date{
   color:grey;
   font-size:10px;
 }
+
 .post_st{
   background-color: #D9DAFD;
   padding-left: 15px;
   padding-top: 10px;
+}
+
+.new_post{
+  position: absolute;
+  display: inline;
 }

@@ -11,7 +11,9 @@
   <div class='title' align="center">
       <h1><a href="/">Django Girls Blog</a></h1>
   </div>
+  <h2 align="right" style="padding-right:50px;"> <a href="{% url 'post_new' %}" >Add a new post</span></a> </h2>
     <div class="content container">
+
         <div class="row">
             <div class="col-md-8">
             {% block content %}
