@@ -3,13 +3,17 @@ p{
   padding: 15px;
   font-family: 'Didact Gothic', sans-serif;
 }
-h1{
+
+h1,h2{
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
 }
-.post_title{
+h1{
+  font-size: 100px;
   padding-top: 20px;
+  background: url('static/images/back.jpg');
 }
+
 
 .date{
   color:grey;
